@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    box-shadow:0 4px 10px rgba(48, 47, 47, 0.89);
+    background-color: rgba(20, 20, 20, 0.925);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo{
+    color: white;
+    font-size: 32px;
+    margin-left: 6%;
+    text-decoration: none;
+    font-family: 'Times New Roman';
+    padding: 14px;
+}
+.logo:hover{
+    color: rgb(230, 8, 0);
+    transition: 0.4s ;
+}
+header nav{
+    margin-right: 50px;
+}
+ header a{
+    font-size: 20px;
+    margin-left: 15px;
+    padding-right: 50px;
+    color: white;
+    text-decoration: none;
+    padding: 22px;
+}
+a:hover{
+    color: rgb(230, 8, 0);
+    transition: 0.4s ease-in-out;
+}
+
+#home{
+    /* background-image: url(../imgs/ba.webp);
+    background-size: cover; */
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 20px;
+    align-items: center;
+    height: 100vh;  
+} 
+/* #home .image{
+    height: 100vh;
+} */
+#home .content{
+    margin: 11% 6% 8% 0;
+    position: relative;
+}
+#home img{
+    width: 480px;
+    height: 430px;
+    animation: float 1.6s linear infinite;
+    z-index: -1;
+}
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(18px); }
+    
+}
+/* #home .content{
+    padding-left: 10%;
+} */
+#home .content h3{
+    color: rgb(236, 154, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#home .content h1{
+    font-size: 70px;
+    color: rgb(14, 14, 14);
+    font-family: 'Dancing Script','Times New Roman';
+}
+#home .content h6{
+    margin-top: 2px;
+    margin-bottom: 10px;
+    color: rgb(153, 8, 8);
+    font-size: 16px;
+    font-family:'Times New Roman';
+}
+#home .content p{
+    font-size: 16px;
+    color: rgb(90, 88, 88);
+}
+#home .btn{
+    margin-top: 5px;
+    padding: 10px 25px;
+    border: 1.5px solid rgb(0, 0, 0);;
+    border-radius: 4px;
+    background-color: rgb(224, 224, 224);
+    font-size: 14px;
+    font-weight: bolder;
+    font-family: 'Times New Roman';
+    animation: changbk 0.8s infinite;
+}
+ #home .btn:hover , #popular .btn:hover ,#menu .btn:hover{
+    background-color: rgb(10, 10, 10);
+    transition: .4s linear;
+    color: aliceblue;
+    animation-play-state: paused;
+}
+@keyframes changbk {
+    form{
+        background-color: rgb(250, 223, 187);
+    }
+    to{
+        background-color: rgb(196, 184, 186);
+    }
+}
+#menu {
+  /* background-image: url(../imgs/menu.webp);
+  background-size: cover; */
+  width: 50%;
+  height: calc(70vh-65px);
+  display: flex;
+}
+#menu img{
+    width: 800px;
+    height: 500px;
+    border-radius:10px ;
+}
+#menu #menup{
+    margin-top: 10%;
+    margin-left: 20%;
+    font-size: 35px;
+    font-family: 'Dancing Script','Times New Roman';;
+}
+#menu span{
+    color: rgb(184, 114, 11);
+}
+#menu h5{
+    width: 400px;
+}
+
+.steps img{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    border: 4px solid rgba(213,213,213,255);
+    }
+    .steps img:hover{
+        height: 185px;
+        width: 185px;
+        border-radius: 50%;
+        transition: 0.4s linear;
+        }
+    .steps{
+    margin-top: 5%;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 10%;
+    background-color: rgb(238, 238, 238);
+    }
+    .steps .box{
+        padding :15px 0;
+        flex:120px;
+        text-align: center;
+    }
+    .steps .box h3{
+        font-family: 'Cormorant', 'Times New Roman';
+        font-size: 18px;
+        color: rgb(3, 3, 3);
+        padding: 5px 0;
+    }
+#Speciality .im{
+    width:  80px;
+    height: 80px;
+}
+#speciality h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Cormorant', 'Times New Roman';
+    padding:85px 100px 100px 8px;
+    color: rgb(27, 27, 27);
+    padding-top: 85px;
+    padding-bottom: 8px;
+    background-color: rgb(255, 255, 255);
+}
+span{
+    color: rgb(230, 4, 4);
+}
+#Speciality .box-container{
+    padding: 0 8% 0 8%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Speciality .box-container .box{
+    flex: 280px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 5px 2px rgb(53, 52, 52);
+    border: 2px solid rgb(39, 38, 38);
+    /* cursor: pointer; */
+    border-radius: 8px;
+    margin: 10px;
+}
+#Speciality .box-container .box .image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: -100%; left: 0;
+}
+#speciality h5{
+    color: rgba(128, 128, 128, 0.733);
+    line-height: 20px;
+}
+#Speciality .box-container .content{
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    height: 180px;
+}
+#Speciality .box-container .box h3{
+    font-size: 21px;
+    color: rgba(121, 9, 9, 0.966);
+    margin: 10px;
+}
+#Speciality .box-container .box:hover .image{
+    top: 0%;
+}
+#Speciality .box-container .box:hover .content{
+    transform: translateY(100%);
+    transition: .6s;
+}
+#popular h1{
+    font-size: 40px;
+    font-family: 'Cormorant', 'Times New Roman';
+    text-align: center;
+    padding: 5px;
+    color: rgb(27, 27, 27);
+    padding-top: 85px;
+    padding-bottom: 6px;
+    background-color: white;
+}
+#popular img{
+    width: 300px;
+    height: 230px;
+    border-radius: 5px;
+}
+
+#popular .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin: 0px 8%;
+}
+#popular .box-container .box{
+    height: 340px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 5px 8px 16px rgb(37, 37, 35);
+    border: 1px solid rgb(39, 38, 38);
+    border-radius: 6px;
+    text-align: center;
+    flex:280px;
+    margin: 5px;
+}
+#popular .box-container .box .price{
+    position: absolute;
+    background-color: rgb(192, 14, 14);
+    color: white;
+    font-size: 18px;
+    padding: 4px 8px;
+    border-radius: 4px; 
+    padding: 10px 10px;
+}
+#popular i{
+    color: rgb(117, 117, 0);
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+#popular .btn , #order .btn ,#menu .btn{
+    margin-top: 5px;
+    padding: 10px 25px;
+    border: 1.5px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    background-color: rgb(252, 244, 244);
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: 'Times New Roman';
+}
+#food{
+    width: 80px;
+    height: 50px;
+    animation: del 18s linear infinite;
+    z-index: 1;
+}
+#order .row{
+    padding: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    box-shadow: 0 4px 8px rgb(27, 27, 27);
+    background-color: whitesmoke;
+    font-family: 'arial';
+}
+
+#Order h1{
+    font-size: 50px;
+    font-family: 'Cormorant', 'Times New Roman';
+    margin: 1% 40% 1% 40%;
+    width: 100%;
+}
+
+.ordering{
+    width: 50%;
+    height: 100%;
+}
+ #order form{
+    height: 100%;
+}
+#qarson{
+    margin:2% 0;
+    width: 520px;
+    height: 320px;
+    margin-left: 6%;
+    border-radius: 10px;
+}
+#order .in{
+    padding: 25px;
+    height: 280px;
+    width: 500px;
+    background-color: rgb(248, 248, 248);
+}
+#order form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 30px;
+    position: relative;
+    margin-bottom: 35px;
+}
+#order input{
+    width: 220px;
+    border: none;
+    font-size: 19px;
+    border-bottom: 2px solid silver;
+    background-color: rgb(248, 248, 248);
+    margin: 15px;
+    height: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#order #Quantity{
+    width: 75px;
+    font-size: 14px;
+    margin-right: 32%;
+    /* border: 1px solid rgb(151, 151, 151); */
+    height: 30px;
+    margin-top: 23px;
+}
+#order input:hover ,#order #Quantity:hover{
+    border-bottom: 2px solid black;
+}
+#order .btn{
+    padding: 5px;
+    margin-top: 20px;
+    background-color: rgb(226, 226, 226);
+    font-size: 20px;
+}
+footer{
+    background-color: rgba(12, 12, 12, 0.979);
+}
+#share{
+    margin-left: 20%;
+}
+footer  .btn{
+    display: inline-block;
+    width: 80px;
+    color: rgb(207, 174, 223);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgb(114, 7, 7);
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: 'Times New Roman';
+    text-decoration: none;
+}
+footer .btn:hover{
+    background-color: rgb(114, 7, 7);
+    transition: .4s linear;
+    color: aliceblue;
+}
